@@ -245,8 +245,8 @@ html {
 			padding: 6px 12px 8px;
 			border: 1px solid #c9cdd6;
 			border-radius: 6px;
-			background: -moz-linear-gradient(top, #fff 50%, #e8ecf3);
-			box-shadow: 0 -2px 0 #c9cdd6 inset;
+			background: -moz-linear-gradient(top, #ffffff, #e8ecf3);
+			box-shadow: 0 -1px 1px #c9cdd6 inset;
 			font-family: inherit;
 			font-size: 18px;
 			line-height: 1;
@@ -446,9 +446,10 @@ html {
 			display: inline-block;
 			margin: 0 4px;
 			padding: 0 16px;
-			border: 1px solid #c0c0c0;
-			border-radius: 4px;
-			background: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+			border: 1px solid #c9cdd6;
+			border-radius: 6px;
+			background: -moz-linear-gradient(top, #ffffff, #e8ecf3);
+			box-shadow: 0 -1px 1px #c9cdd6 inset;
 			color: #333;
 			font-size: 16px;
 			line-height: 32px;

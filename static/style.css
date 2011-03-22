@@ -15,7 +15,6 @@ html {
 	width: 320px;
 	font-family: "Droid Sans", Helvetica, sans-serif;
 	font-size: 14px;
-	background: #fff;
 	color: #333;
 }
 	body {
@@ -202,7 +201,6 @@ html {
 
 .page {
 	display: none;
-	background: #fff;
 }
 .page.selected {
 	display: block;
@@ -229,6 +227,7 @@ html {
 	.page .cell {
 		position: relative;
 		padding: 15px 10px;
+		background: #fff;
 		font-size: 18px;
 		line-height: 18px;
 	}
@@ -336,6 +335,9 @@ html {
 		padding: 10px;
 		padding-left: 52px;
 		font-size: 14px;
+	}
+	.messages .cell:nth-child(even) {
+		background: #f8f8f8;
 	}
 		.messages .cell:before {
 			content: '';

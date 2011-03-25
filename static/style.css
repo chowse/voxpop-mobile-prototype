@@ -285,6 +285,26 @@ html.dev {
 		}
 
 
+.pushbutton {
+	display: inline-block;
+	margin: 0 4px;
+	padding: 0 20px;
+	border: 1px solid #c9cdd6;
+	border-radius: 6px;
+	background: -moz-linear-gradient(top, #ffffff, #e8ecf3);
+	box-shadow: 0 -1px 1px #c9cdd6 inset;
+	color: #333;
+	font-size: 16px;
+	line-height: 36px;
+}
+	.pushbutton.disabled {
+		background: #fff;
+		border-color: #e8ecf3;
+		color: #999;
+		box-shadow: none;
+	}
+
+
 .stats {
 }
 	.stats .cell {
@@ -392,7 +412,16 @@ html.dev {
 			.messages .cell .domain:before {
 				content: none;
 			}
-
+	.messages .cell.pager {
+		text-align: center;
+		padding-left: 10px;
+	}
+		.messages .cell.pager:before {
+			content: none;
+		}
+		.messages .cell.pager .pushbutton {
+			padding: 0 10px;
+		}
 
 #m-message-header {
 	height: 36px;
@@ -445,18 +474,6 @@ html.dev {
 	}
 		#m-one-message .cell.actions:before {
 			content: none;
-		}
-		#m-one-message .cell.actions a {
-			display: inline-block;
-			margin: 0 4px;
-			padding: 0 16px;
-			border: 1px solid #c9cdd6;
-			border-radius: 6px;
-			background: -moz-linear-gradient(top, #ffffff, #e8ecf3);
-			box-shadow: 0 -1px 1px #c9cdd6 inset;
-			color: #333;
-			font-size: 16px;
-			line-height: 32px;
 		}
 
 

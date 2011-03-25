@@ -76,6 +76,8 @@ html.dev {
 	}
 	#m-search input {
 		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
 		width: 100%;
 		height: 36px;
 		padding: 0 8px 0 36px;
@@ -85,6 +87,7 @@ html.dev {
 		font-size: 16px;
 		line-height: 36px;
 		border-radius: 6px;
+		-webkit-box-shadow: 0 2px 2px rgba(0,0,0, .25) inset;
 		box-shadow: 0 2px 2px rgba(0,0,0, .25) inset;
 	}
 	#m-search input:-moz-placeholder {
@@ -108,6 +111,10 @@ html.dev {
 	height: 48px;
 	background: -moz-linear-gradient(top, rgba(0,0,0, 0), rgba(0,0,0, .2)),
 	            -moz-linear-gradient(bottom, rgba(0,0,0, .5), rgba(0,0,0, 0) 4px, rgba(0,0,0, 0));
+	background: -webkit-gradient(linear, 0 top, 0 bottom, from(rgba(0,0,0, 0)), to(rgba(0,0,0, .2))),
+	            -webkit-gradient(linear, 0 bottom, 0 40, from(rgba(0,0,0, .5)), to(rgba(0,0,0, 0)));
+	background: linear-gradient(top, rgba(0,0,0, 0), rgba(0,0,0, .2)),
+	            linear-gradient(bottom, rgba(0,0,0, .5), rgba(0,0,0, 0) 4px, rgba(0,0,0, 0));
 }
 	#m-tabs ul {
 		height: 100%;
@@ -119,6 +126,8 @@ html.dev {
 		display: block;
 		position: relative;
 		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
 		overflow: hidden;
 		float: left;
 		width: 25%;
@@ -155,6 +164,8 @@ html.dev {
 		border-right-color: transparent;
 		color: #fff;
 		background: -moz-linear-gradient(top, #5d88b5, #74aae4);
+		background: -webkit-gradient(linear, 0 top, 0 bottom, from(#5d88b5), to(#74aae4));
+		background: linear-gradient(top, #5d88b5, #74aae4);
 	}
 
 	#m-tab-feed:before { background-position: 0 0; }
@@ -216,10 +227,10 @@ html.dev {
 	}
 	.page h2 {
 		padding: 6px 10px;
-		background: -moz-linear-gradient(top, rgba(255,255,255,.0), rgba(255,255,255,.0)),
-		            -moz-linear-gradient(top, rgba(255,255,255,.25), rgba(255,255,255,0)) #74AAE4;
 		color: #fff;
 		background: -moz-linear-gradient(top, #f0f0f0, #dadada);
+		background: -webkit-gradient(linear, 0 top, 0 bottom, from(#f0f0f0), to(#dadada));
+		background: linear-gradient(top, #f0f0f0, #dadada);
 		color: #000;
 		font-size: 12px;
 		font-weight: bold;
@@ -255,6 +266,9 @@ html.dev {
 			border: 1px solid #c9cdd6;
 			border-radius: 6px;
 			background: -moz-linear-gradient(top, #ffffff, #e8ecf3);
+			background: -webkit-gradient(linear, 0 top, 0 bottom, from(#ffffff), to(#e8ecf3));
+			background: linear-gradient(top, #ffffff, #e8ecf3);
+			-webkit-box-shadow: 0 -1px 1px #c9cdd6 inset;
 			box-shadow: 0 -1px 1px #c9cdd6 inset;
 			font-family: inherit;
 			font-size: 18px;
@@ -292,6 +306,9 @@ html.dev {
 	border: 1px solid #c9cdd6;
 	border-radius: 6px;
 	background: -moz-linear-gradient(top, #ffffff, #e8ecf3);
+	background: -webkit-gradient(linear, 0 top, 0 bottom, from(#ffffff), to(#e8ecf3));
+	background: linear-gradient(top, #ffffff, #e8ecf3);
+	-webkit-box-shadow: 0 -1px 1px #c9cdd6 inset;
 	box-shadow: 0 -1px 1px #c9cdd6 inset;
 	color: #333;
 	font-size: 16px;
@@ -301,6 +318,7 @@ html.dev {
 		background: #fff;
 		border-color: #e8ecf3;
 		color: #999;
+		-webkit-box-shadow: none;
 		box-shadow: none;
 	}
 
@@ -390,7 +408,7 @@ html.dev {
 				margin: 0 5px;
 			}
 			.messages .cell li:first-child:before {
-				content: none;
+				display: none;
 			}
 			.messages .cell .time {
 				font-weight: bold;
@@ -410,14 +428,14 @@ html.dev {
 				display: block;
 			}
 			.messages .cell .domain:before {
-				content: none;
+				display: none;
 			}
 	.messages .cell.pager {
 		text-align: center;
 		padding-left: 10px;
 	}
 		.messages .cell.pager:before {
-			content: none;
+			display: none;
 		}
 		.messages .cell.pager .pushbutton {
 			padding: 0 10px;
@@ -428,6 +446,10 @@ html.dev {
 	padding: 10px 10px 14px;
 	background: -moz-linear-gradient(top, rgba(0,0,0, 0), rgba(0,0,0, .2)),
 	            -moz-linear-gradient(bottom, rgba(0,0,0, .5), rgba(0,0,0, 0) 4px, rgba(0,0,0, 0));
+	background: -webkit-gradient(linear, 0 top, 0 bottom, from(rgba(0,0,0, 0)), to(rgba(0,0,0, .2))),
+	            -webkit-gradient(linear, 0 bottom, 0 52, from(rgba(0,0,0, .5)), to(rgba(0,0,0, 0)));
+	background: linear-gradient(top, rgba(0,0,0, 0), rgba(0,0,0, .2)),
+	            linear-gradient(bottom, rgba(0,0,0, .5), rgba(0,0,0, 0) 4px, rgba(0,0,0, 0));
 }
 	#m-message-header a {
 		display: inline-block;
@@ -435,9 +457,13 @@ html.dev {
 		border-radius: 6px;
 		border: 1px solid rgba(0,0,0, .2);
 		background: -moz-linear-gradient(top, rgba(0,0,0, .1), rgba(0,0,0, .2));
+		background: -webkit-gradient(linear, 0 top, 0 bottom, from(rgba(0,0,0, .1)), to(rgba(0,0,0, .2)));
+		background: linear-gradient(top, rgba(0,0,0, .1), rgba(0,0,0, .2));
 		color: #fff;
 		font-size: 12px;
 		line-height: 34px;
+		-webkit-box-shadow: 0px -1px 0 rgba(0,0,0, .2) inset,
+		                    0px 1px 0 rgba(255,255,255, .125);
 		box-shadow: 0px -1px 0 rgba(0,0,0, .2) inset,
 		            0px 1px 0 rgba(255,255,255, .125);
 	}
@@ -473,7 +499,7 @@ html.dev {
 		padding: 20px 10px;
 	}
 		#m-one-message .cell.actions:before {
-			content: none;
+			display: none;
 		}
 
 
@@ -481,6 +507,8 @@ html.dev {
 
 	#m-tabs {
 		height: 40px;
+		background: -webkit-gradient(linear, 0 top, 0 bottom, from(rgba(0,0,0, 0)), to(rgba(0,0,0, .2))),
+		            -webkit-gradient(linear, 0 bottom, 0 36, from(rgba(0,0,0, .5)), to(rgba(0,0,0, 0)));
 	}
 		#m-tabs a {
 			font-size: 18px;
